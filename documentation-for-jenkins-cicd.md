@@ -12,24 +12,62 @@ git clone https://github.com/Chaitannyaa/node-todo-cicd.git
 ## Setting up webhooks
 
 - Go to your GitHub repository and click on the "Settings" tab.
+
+![image](https://user-images.githubusercontent.com/117350787/235436622-a6be4b78-2650-415e-aa5c-19ba81293454.png)
+
 - Click on the "Webhooks" option in the left sidebar.
+
+![image](https://user-images.githubusercontent.com/117350787/235436693-30bdae6a-101f-4ba8-90e6-f4f789e90dea.png)
+
 - Click on the "Add webhook" button.
-- In the "Payload URL" field, enter the URL of the Jenkins server along with the path of the Jenkins webhook endpoint. 
-  For example, "http://localhost:8080/github-webhook/".
+
+![image](https://user-images.githubusercontent.com/117350787/235436914-a20b4473-0536-4c5f-af55-149bc1b76113.png)
+
+- In the "Payload URL" field, enter the URL of the Jenkins server along with the path of the Jenkins webhook endpoint. For example, "http://localhost:8080/github-webhook/".
+
+![image](https://user-images.githubusercontent.com/117350787/235436791-10a24ca9-9c2a-4495-8660-534eec7e9374.png)
+
 - Select the events that you want to trigger the webhook.
+
+![image](https://user-images.githubusercontent.com/117350787/235436920-64008385-6f70-4ab2-af90-4a49ebc753fe.png)
+
 - Click on the "Add webhook" button to save the webhook.
+
+![image](https://user-images.githubusercontent.com/117350787/235437014-ee4cacbb-e82a-4f19-a115-a86ee189c2ca.png)
 
 ## Setting up Jenkins
 
 - Download and install Jenkins on your server or local machine.
+
+[Read my blog >>](https://90daysofdevopschallenge.hashnode.dev/day07-90daysofdevops-challenge-tws)
+
 - Open Jenkins in your web browser and create a new pipeline job.
+
+![image](https://user-images.githubusercontent.com/117350787/235436303-49db3a4c-02b4-4371-96bb-992968e1c80b.png)
+
+![image](https://user-images.githubusercontent.com/117350787/235436426-96cc67cd-6430-4b34-9d80-2a75fbc3d18c.png)
+
 - Configure the pipeline job to use the GitHub repository that you cloned earlier.
+
+![image](https://user-images.githubusercontent.com/117350787/235437278-6959c2a7-d81e-4868-baad-3539651cae57.png)
+
 - Add a build stage to the pipeline to build and test the application code.
+
+![image](https://user-images.githubusercontent.com/117350787/235437449-ff14d143-f9a4-4881-ad38-64abce1a9d23.png)
+
 - Add a deploy stage to the pipeline to deploy the application to your server.
+
+![image](https://user-images.githubusercontent.com/117350787/235437500-9ead72e6-e063-4866-ae69-df17091b81a3.png)
+
 - Configure the webhook in Jenkins to trigger the pipeline whenever there is a push event on the repository.
 
+![image](https://user-images.githubusercontent.com/117350787/235437552-433f6ce2-3024-49e0-80dd-fc0c605ced42.png)
+
 ## Deploying the application
+
 - Make changes to the code in your local repository.
+
+
 - Commit and push the changes to the GitHub repository.
 - The webhook will trigger the Jenkins pipeline, which will build and test the application code.
 - If the build and tests pass, the pipeline will deploy the application to your server.
