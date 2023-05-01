@@ -41,6 +41,23 @@ git clone https://github.com/Chaitannyaa/node-todo-cicd.git
 
 [Read my blog >>](https://90daysofdevopschallenge.hashnode.dev/day07-90daysofdevops-challenge-tws)
 
+- Setup jenkins server by installing dependencies
+```sh
+sudo apt  install docker.io
+```
+```sh
+sudo apt  install docker-compose
+```
+```sh
+sudo usermod -aG docker $USER
+```
+```sh
+sudo usermod -aG docker jenkins
+```
+```sh
+sudo reboot
+```
+
 - Open Jenkins in your web browser and create a new pipeline job.
 
 ![image](https://user-images.githubusercontent.com/117350787/235436303-49db3a4c-02b4-4371-96bb-992968e1c80b.png)
