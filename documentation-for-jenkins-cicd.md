@@ -1,4 +1,3 @@
-
 # Documentation to setup Jenkins CICD pipeline for this Application
 
 ## Clone the repository
@@ -82,12 +81,23 @@ sudo reboot
 
 ## Deploying the application
 
-- Make changes to the code in your local repository.
+- Make changes to the code, Commit and push the changes to the GitHub repository.
 
+![image](https://user-images.githubusercontent.com/117350787/235441155-f642991d-1440-4cc5-b3d2-eaff928b7927.png)
 
-- Commit and push the changes to the GitHub repository.
 - The webhook will trigger the Jenkins pipeline, which will build and test the application code.
+
+![image](https://user-images.githubusercontent.com/117350787/235441473-d7a38494-624a-4aed-bee2-d2b05c2fc158.png)
+
 - If the build and tests pass, the pipeline will deploy the application to your server.
+
+![image](https://user-images.githubusercontent.com/117350787/235441310-be0cf1a1-abad-43e9-a7ab-eaf639bb5328.png)
+
+![image](https://user-images.githubusercontent.com/117350787/235441522-d7fdf3e3-7123-4a05-bf65-c2639aba6bd5.png)
+
 - You can monitor the status of the pipeline and any errors or failures in the Jenkins console.
+
+![image](https://user-images.githubusercontent.com/117350787/235441686-6cbf392c-f165-4f16-9f7a-35e6015a0584.png)
+
 
 ## That's it! You now have a fully automated CI/CD pipeline that deploys your application whenever there is a new commit to your repository.
