@@ -84,6 +84,7 @@ sudo reboot
 
 - Make changes to the code in your local repository.
 
+
 - Commit and push the changes to the GitHub repository.
 - The webhook will trigger the Jenkins pipeline, which will build and test the application code.
 - If the build and tests pass, the pipeline will deploy the application to your server.
